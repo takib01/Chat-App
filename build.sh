@@ -2,9 +2,9 @@
 # exit on error
 set -o errexit
 
-cd mychat
+pip install -r requirements.txt
 
-pip install -r ../requirements.txt
+cd mychat
 
 python manage.py collectstatic --no-input
 python manage.py migrate
