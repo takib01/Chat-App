@@ -3,11 +3,11 @@ from django.http import JsonResponse
 from agora_token_builder import RtcTokenBuilder
 import random
 import time 
-# Create your views here.
+
 
 def getToken(request):
-    appId = '63b54517e1174d479970f54729713f22'
-    appCertificate  =  '4a9aa3187a9a4889bb9ca27f52d431f6'
+    appId = '4851850cf0b144318c00d18116cfc150'
+    appCertificate  =  '094ef700c05d4bf5af5bef590b8e6371'
     channelName = request.GET.get('channel')
     uid = random.randint(1, 255)
     expirationTimeInSeconds = 3600*24
